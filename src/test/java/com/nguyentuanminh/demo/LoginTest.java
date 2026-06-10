@@ -82,7 +82,7 @@ public class LoginTest {
         driver.findElement(By.id("username")).sendKeys("2351067101");
 
         // Enter wrong Password
-        driver.findElement(By.id("password")).sendKeys("Thien@172004");
+        driver.findElement(By.id("password")).sendKeys("11111111");
 
         // Click Login button
         driver.findElement(By.cssSelector("button[data-ng-click='vm.login()']")).click();
