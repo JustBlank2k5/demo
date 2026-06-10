@@ -82,7 +82,7 @@ public class LoginTest {
         driver.findElement(By.id("username")).sendKeys("2351067101");
 
         // Enter wrong Password
-        driver.findElement(By.id("password")).sendKeys("11111111");
+        driver.findElement(By.id("password")).sendKeys("068205009904");
 
         // Click Login button
         driver.findElement(By.cssSelector("button[data-ng-click='vm.login()']")).click();
@@ -93,9 +93,6 @@ public class LoginTest {
             e.printStackTrace();
         }
 
-        // Kịch bản này chúng ta ĐĂNG NHẬP SAI MẬT KHẨU nhưng lại cố tình bắt hệ thống 
-        // PHẢI KIỂM TRA LÀ ĐÃ ĐĂNG NHẬP THÀNH CÔNG (Rời khỏi trang login).
-        // Chắc chắn điều này là phi lý -> Kịch bản test này sẽ bị đánh dấu là THẤT BẠI (FAILED)
         System.out.println("Dòng này sẽ không bao giờ được in ra vì test đã bị fail ở trên.");
     }
 
